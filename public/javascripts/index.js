@@ -1,5 +1,4 @@
 
-
 Weibo = {};
     // must initialize before using Weibo Object
     Weibo.init = function(setting) {
@@ -35,6 +34,7 @@ Weibo = {};
         var path = 'https://api.weibo.com/oauth2/authorize' + Weibo.getGetURL();
         return path;
     };
+
 Weibo.init(setting);
 $('#signin').click(function(){
   window.open(Weibo.authorize());
