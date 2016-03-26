@@ -1,2 +1,2 @@
 # myapp
-Task1 of the Search Engine Course
+Task1 of the SOA
