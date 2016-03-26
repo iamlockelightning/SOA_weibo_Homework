@@ -35,6 +35,7 @@ Weibo = {};
         return path;
     };
 
+console.log(setting)
 Weibo.init(setting);
 $('#signin').click(function(){
   window.open(Weibo.authorize());
