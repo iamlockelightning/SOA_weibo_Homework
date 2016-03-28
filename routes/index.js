@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/authorize', function(req, res, next){
-  req.send(Weibo.authorize());
+  res.send(Weibo.authorize());
 });
 
 /* GET show page. */
