@@ -1,4 +1,4 @@
-var express = require('express');
+﻿var express = require('express');
 var router = express.Router();
 var Weibo = require('nodeweibo');
 var http = require('http');
@@ -15,7 +15,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/authorize', function(req, res, next){
-  req.send(Weibo.authorize());
+console.log(Weibo.appKey);
+console.log();
+  res.send(200, Weibo.authorize());
 });
 
 /* GET show page. */

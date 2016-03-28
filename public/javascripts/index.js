@@ -1,7 +1,8 @@
 
 $('#signin').click(function(){
   $.get('authorize', function(url){
-    window.open(url);
+    window.location.href = url;
     // console.log("aaa");
   });
+  return false;
 });
